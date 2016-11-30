@@ -1,0 +1,15 @@
+<h1> Please fill out the form to send the text message </h1>
+
+<%= form_for @sm do |f| %>
+
+  <%= f.label "Please enter phone number" %>
+  <%= f.text_field :Cell_number %>
+
+  <%= f.label "Enter a Message" %>
+  <%= f.text_area :Message %>
+
+  <%= f.submit "Send" %>
+
+<% end %>
+
+<%= link_to 'Back', root_path %>
